@@ -1,0 +1,23 @@
+{
+  "name": "nexveda-technology",
+  "version": "1.0.0",
+  "description": "Nexveda Technology - Enterprise Web Development Platform",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve -l 3000 .",
+    "dev": "npx serve -l 3000 ."
+  },
+  "keywords": [
+    "nexveda",
+    "web-development",
+    "enterprise",
+    "nextjs",
+    "react",
+    "tailwind"
+  ],
+  "author": "Nexveda Technology Team",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/standalone": "^8.0.4"
+  }
+}

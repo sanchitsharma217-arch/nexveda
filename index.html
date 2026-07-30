@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nexveda Technology | Enterprise Web Architecture & Digital Experiences</title>
+  <meta name="description" content="Nexveda Technology builds enterprise-quality custom web applications, SaaS platforms, e-commerce engines, and digital experiences for high-growth brands. Guaranteed 100/100 Core Web Vitals.">
+  
+  <!-- Favicon & Touch Icons -->
+  <link rel="icon" type="image/svg+xml" href="assets/logo-concept-2.svg">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            obsidian: '#030712',
+            space: '#05070E',
+            cyanAccent: '#00F0FF',
+            blueElectric: '#38BDF8',
+          },
+          fontFamily: {
+            heading: ['Plus Jakarta Sans', 'sans-serif'],
+            body: ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- React 18 & Babel CDN -->
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+  <!-- GSAP 3, ScrollTrigger & Lenis Cinematic Smooth Scroll Engine -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.9/dist/lenis.min.js"></script>
+
+  <!-- Custom Stylesheet (Cache Busted) -->
+  <link rel="stylesheet" href="styles.css?v=25.0">
+</head>
+<body class="text-slate-100 antialiased selection:bg-cyan-500 selection:text-black">
+
+  <!-- React Mount Root with Glass Loading Fallback -->
+  <div id="root">
+    <div style="min-height:100vh; display:flex; flex-direction:column; align-items:center; justify-center:center; background:#030712; color:#00F0FF; font-family:'Plus Jakarta Sans', sans-serif;">
+      <div style="width:50px; height:50px; border:3px solid rgba(56,189,248,0.2); border-top-color:#00F0FF; border-radius:50%; animation:spin 0.8s linear infinite;"></div>
+      <div style="margin-top:16px; font-size:12px; letter-spacing:0.2em; font-family:monospace; color:#94A3B8;">INITIALIZING NEXVEDA PLATFORM...</div>
+      <style>@keyframes spin { 0% { transform:rotate(0deg); } 100% { transform:rotate(360deg); } }</style>
+    </div>
+  </div>
+
+  <!-- Application Component Engine -->
+  <script type="text/babel" src="app.js?v=25.0"></script>
+
+</body>
+</html>

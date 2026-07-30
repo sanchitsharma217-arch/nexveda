@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <defs>
+    <linearGradient id="cyanGlow2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00F0FF"/>
+      <stop offset="100%" stop-color="#2563EB"/>
+    </linearGradient>
+    <filter id="glow2" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3.5" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <rect width="100" height="100" rx="22" fill="#05070E" stroke="rgba(0, 240, 255, 0.25)" stroke-width="1.5"/>
+
+  <!-- Left 'N' Vertical Pillar -->
+  <path d="M 26 75 V 25" stroke="#F8FAFC" stroke-width="8" stroke-linecap="round"/>
+
+  <!-- Central Interlocking Diagonal forming 'N' & 'X' -->
+  <path d="M 26 25 L 68 75" stroke="url(#cyanGlow2)" stroke-width="8" stroke-linecap="round" filter="url(#glow2)"/>
+
+  <!-- Asymmetric Checkmark Cross-Stroke forming 'X' -->
+  <path d="M 46 62 L 76 25" stroke="url(#cyanGlow2)" stroke-width="8" stroke-linecap="round" filter="url(#glow2)"/>
+
+  <!-- Right Pillar completing 'N' -->
+  <path d="M 68 75 V 45" stroke="#94A3B8" stroke-width="7" stroke-linecap="round"/>
+
+  <!-- Electric Focal Node -->
+  <circle cx="76" cy="25" r="3.5" fill="#FFFFFF"/>
+</svg>

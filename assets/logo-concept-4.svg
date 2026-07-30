@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <defs>
+    <linearGradient id="grad4" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#00F0FF"/>
+    </linearGradient>
+    <filter id="glow4">
+      <feGaussianBlur stdDeviation="2.5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="100" height="100" rx="22" fill="#0B132B" stroke="rgba(0, 240, 255, 0.3)" stroke-width="1.5"/>
+
+  <!-- Minimalist 'N' Outer Frame -->
+  <path d="M 28 72 V 28 L 60 72 M 60 28 V 52" stroke="#64748B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Geometric 'X' Asymmetric Check Blade -->
+  <path d="M 40 44 L 74 72 M 52 72 L 74 30" stroke="url(#grad4)" stroke-width="6.5" stroke-linecap="round" filter="url(#glow4)"/>
+  
+  <circle cx="74" cy="30" r="3" fill="#FFFFFF"/>
+</svg>
